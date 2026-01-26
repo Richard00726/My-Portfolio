@@ -1,38 +1,36 @@
-import { url } from 'inspector/promises'
 import { ExternalLink, Github } from 'lucide-react'
 
+const PROJECTS = [
+  {
+    title: 'VIRTUAL-AIRLINE-NEXUS',
+    description:
+      'Virtual Airline Nexus is a web-based airline management system designed to simulate the operations of an airline. The project allows users to view flights, manage bookings, and track airline data in a user-friendly interface.',
+    image: 'https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=500&fit=crop',
+    tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'GitHub'],
+    github: 'https://github.com/Richard00726/virtual-airline-nexus.git',
+    demo: 'https://github.com/Richard00726/virtual-airline-nexus.git',
+  },
+  {
+    title: 'MY PORTFOLIO WEBSITE – INTERACTIVE & ANIMATED',
+    description:
+      'A responsive personal portfolio showcasing full-stack development projects, technical skills, and contact information using modern web technologies.',
+    image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Email.js', 'Git', 'GitHub'],
+    github: '#',
+    demo: '#',
+  },
+  {
+    title: 'AUTOMOBILE PRODUCTION DATA SECURITY AND WORKFLOW OPTIMIZATION (Work in Progress)',
+    description:
+      'An ongoing project focused on secure data workflows and process optimization for automobile production using modern web technologies.',
+    image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+    github: '#',
+    demo: '#',
+  },
+]
+
 export default function Projects() {
-  const projects = [
-    {
-      title: 'VIRTUAL-AIRLINE-NEXUS',
-      description:
-        'Virtual Airline Nexus is a web-based airline management system designed to simulate the operations of an airline. The project allows users to view flights, manage bookings, and track airline data in a user-friendly interface.',
-      image: 'https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=500&fit=crop',
-      tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'GitHub'],
-      github: 'https://github.com/Richard00726/virtual-airline-nexus.git',
-      demo: 'https://github.com/Richard00726/virtual-airline-nexus.git',
-    },
-    {
-      title: 'MY PORTFOLIO WEBSITE – INTERACTIVE & ANIMATED',
-      description:
-        'A luxury engaging portfolio website featuring interactive 3D graphics with smooth animations powered by React Three Fiber, Framer Motion and Tailwind CSS.',
-      image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
-      tags: ['React', 'GSAP', 'Tailwind CSS'],
-      github: '#',
-      demo: '#',
-    },
-    {
-      title: 'AUTOMOBILE PRODUCTION DATA SECURITY AND WORKFLOW OPTIMIZATION (Work in Progress)',
-      description:
-        'An ongoing project focused on secure data workflows and process optimization for automobile production using modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
-      tags: ['HTML', 'CSS', 'JavaScript','React' ],
-      github: '#',
-      demo: '#',
-    },
-
-  ]
-
   return (
     <section id="projects" className="relative py-24 bg-gradient-to-b from-purple-950/10 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,15 +40,14 @@ export default function Projects() {
           </h2>
           <p className="max-w-3xl mx-auto text-gray-400">
             A curated collection of full stack projects demonstrating my expertise in building
-            modern, scalable web applications — from intuitive frontends to robust backend
-            systems
+            modern, scalable web applications — from intuitive frontends to robust backend systems
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {PROJECTS.map((project) => (
             <div
-              key={index}
+              key={project.title}
               className="group bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:card-glow"
             >
               <div className="relative overflow-hidden">
@@ -69,9 +66,9 @@ export default function Projects() {
                 <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
+                  {project.tags.map((tag) => (
                     <span
-                      key={tagIndex}
+                      key={tag}
                       className="px-3 py-1 text-xs bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30"
                     >
                       {tag}
@@ -84,7 +81,7 @@ export default function Projects() {
                     href={project.github}
                     className="flex items-center gap-2 text-sm text-gray-300 hover:text-purple-400 transition-colors"
                   >
-                    <Github size={18} />
+                    <Github className="h-4 w-4" />
                     Code
                   </a>
                   <a
