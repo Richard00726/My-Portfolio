@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #  Personal Portfolio Website
 
 A modern, responsive personal portfolio website showcasing my skills, projects, and contact information.  
@@ -73,3 +74,7 @@ This project is built with:
 
 Deploy the project by uploading it to GitHub and enabling GitHub Pages from the repository Settings.
 
+=======
+# My-Portfolio
+A simple contact form that sends messages directly to email using EmailJS without a backend.
+>>>>>>> 0915c3f1be015c7be4625a1e767fd3fbead4bff8
