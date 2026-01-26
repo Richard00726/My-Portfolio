@@ -4,29 +4,29 @@ import { ExternalLink, Github } from 'lucide-react'
 export default function Projects() {
   const projects = [
     {
-      title: 'virtual-airline-nexus',
+      title: 'VIRTUAL-AIRLINE-NEXUS',
       description:
         'Virtual Airline Nexus is a web-based airline management system designed to simulate the operations of an airline. The project allows users to view flights, manage bookings, and track airline data in a user-friendly interface.',
       image: 'https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=500&fit=crop',
-      tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'GitHub'],
+      tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'Git','GitHub'],
       github: 'https://github.com/Richard00726/virtual-airline-nexus.git',
       demo: 'https://github.com/Richard00726/virtual-airline-nexus.git',
     },
     {
-      title: '3D Portfolio Website - Interactive & Animated',
+      title: 'MY PORTFOLIO WEBSITE – INTERACTIVE & ANIMATED',
       description:
-        'A luxury engaging portfolio website featuring interactive 3D graphics with smooth animations powered by React Three Fiber, Framer Motion and Tailwind CSS.',
-      image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
-      tags: ['React', 'GSAP', 'Tailwind CSS'],
-      github: '#',
-      demo: '#',
+         'A responsive personal portfolio showcasing full-stack development projects, technical skills, and contact information using modern web technologies.',
+      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
+      tags: ['HTML',' TypeScript',' React', 'Vite', 'Tailwind CSS', 'EmailJS', 'Git', 'GitHub'],
+      github: 'https://github.com/Richard00726/My-Portfolio',
+      demo: 'https://github.com/Richard00726/My-Portfolio',
     },
     {
-      title: '3D Website Landing Page',
+      title: 'AUTOMOBILE PRODUCTION DATA SECURITY AND WORKFLOW OPTIMIZATION (Work in Progress)',
       description:
-        'A modern 3D landing page built with sleek design, HTML5, CSS3, and advanced JavaScript. Includes a contact form, elegant layout for an engaging and responsive user experience.',
-      image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop',
-      tags: ['HTML', 'CSS', 'React'],
+        'An ongoing project focused on secure data workflows and process optimization for automobile production using modern web technologies.',
+      image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
+      tags: ['HTML', 'CSS', 'JavaScript','React' ],
       github: '#',
       demo: '#',
     },
