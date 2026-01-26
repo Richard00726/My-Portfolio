@@ -8,18 +8,18 @@ export default function Projects() {
       description:
         'Virtual Airline Nexus is a web-based airline management system designed to simulate the operations of an airline. The project allows users to view flights, manage bookings, and track airline data in a user-friendly interface.',
       image: 'https://images.unsplash.com/photo-1529074963764-98f45c47344b?w=800&h=500&fit=crop',
-      tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'git', 'GitHub'],
+      tags: ['TypeScript', 'React.js', 'Tailwind CSS', 'Vite', 'MongoDB', 'GitHub'],
       github: 'https://github.com/Richard00726/virtual-airline-nexus.git',
       demo: 'https://github.com/Richard00726/virtual-airline-nexus.git',
     },
     {
       title: 'MY PORTFOLIO WEBSITE – INTERACTIVE & ANIMATED',
       description:
-        'A responsive personal portfolio showcasing full-stack development projects, technical skills, and contact information using modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
-      tags: ['HTML',' TypeScript',' React', 'Vite', 'Tailwind CSS', 'EmailJS', 'Git', 'GitHub'],
-      github: 'https://github.com/Richard00726/My-Portfolio',
-      demo: 'https://github.com/Richard00726/My-Portfolio',
+        'A luxury engaging portfolio website featuring interactive 3D graphics with smooth animations powered by React Three Fiber, Framer Motion and Tailwind CSS.',
+      image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
+      tags: ['React', 'GSAP', 'Tailwind CSS'],
+      github: '#',
+      demo: '#',
     },
     {
       title: 'AUTOMOBILE PRODUCTION DATA SECURITY AND WORKFLOW OPTIMIZATION (Work in Progress)',
