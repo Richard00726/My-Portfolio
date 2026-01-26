@@ -14,7 +14,7 @@ const PROJECTS = [
     title: 'MY PORTFOLIO WEBSITE – INTERACTIVE & ANIMATED',
     description:
       'A responsive personal portfolio showcasing full-stack development projects, technical skills, and contact information using modern web technologies.',
-    image: 'https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Email.js', 'Git', 'GitHub'],
     github: '#',
     demo: '#',
