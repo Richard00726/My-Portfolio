@@ -16,8 +16,8 @@ const PROJECTS = [
       'A responsive personal portfolio showcasing full-stack development projects, technical skills, and contact information using modern web technologies.',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Email.js', 'Git', 'GitHub'],
-    github: '#',
-    demo: '#',
+    github: 'https://github.com/Richard00726/My-Portfolio',
+    demo: 'https://github.com/Richard00726/My-Portfolio',
   },
   {
     title: 'AUTOMOBILE PRODUCTION DATA SECURITY AND WORKFLOW OPTIMIZATION (Work in Progress)',
