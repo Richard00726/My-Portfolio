@@ -1,5 +1,5 @@
 import { Award, Briefcase, Users } from 'lucide-react'
-import profileImg from '../../assets/profile.jpg'
+import profileImg from '../../assets/profile-pic.png'
 
 export default function About() {
   const stats = [
@@ -22,16 +22,21 @@ export default function About() {
           <div className="flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-2xl opacity-75 group-hover:opacity-100 transition-opacity" />
+
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-spin-slow opacity-50" />
+
                 <img
                   src={profileImg}
                   alt="Profile"
-                  className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-purple-500/50"
+                  className="relative w-64 h-64 md:w-80 md:h-80 rounded-full  object-cover object-[50%_32%]  border-4 border-purple-500/50"
                 />
               </div>
             </div>
           </div>
+
+
+
 
           {/* About Content */}
           <div className="space-y-6">
@@ -64,6 +69,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
