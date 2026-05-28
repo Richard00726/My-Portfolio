@@ -15,7 +15,9 @@ export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-b from-black to-purple-950/20 border-t border-purple-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8 md:gap-16 mb-8 items-stretch">
+ 
+        {/* Desktop only — full footer content */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8 md:gap-16 mb-8 items-stretch">
  
           <div className="flex flex-col justify-between h-full">
             <div>
@@ -27,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
  
-          <div className="hidden md:flex md:flex-col">
+          <div className="flex flex-col">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
               {quickLinks.map((link) => (
@@ -82,9 +84,12 @@ export default function Footer() {
           </div>
  
         </div>
+ 
+        {/* Copyright — always visible */}
         <div className="border-t border-purple-500/20 pt-8 text-center text-sm text-gray-400">
           <p>© {currentYear} Infant Richart. All rights reserved.</p>
         </div>
+ 
       </div>
     </footer>
   );
