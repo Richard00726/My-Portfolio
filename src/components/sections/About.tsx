@@ -40,7 +40,7 @@ export default function About() {
             </p>
             <p className="text-gray-300 leading-relaxed text-justify">
               I've completed internships at Gradtwin (Java Full Stack) and Jadayau Software Technology, gaining real-world experience in end-to-end application development, debugging, and software workflows.
-              I've completed my B.Tech in Information Technology at Anjalai Ammal Mahalingam Engineering College with a CGPA of 7.85, and completed intensive MERN Stack training at CodeTech Technology Institute, Chennai.
+              I've completed my B.Tech in Information Technology at Anjalai Ammal Mahalingam Engineering College with a CGPA of 7.85, and currently pursuing intensive MERN Stack training at CodeTech Technology Institute, Chennai.
             </p>
             <p className="text-gray-300 leading-relaxed text-justify">
               I'm a continuous learner who enjoys solving real-world problems through clean, maintainable code. My interests also extend into AI, Machine Learning, and Cyber Security.
