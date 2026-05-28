@@ -1,40 +1,56 @@
 import { Code2, Database, GraduationCap, Layers, BookOpen, Wrench, Briefcase, FileText, ExternalLink } from 'lucide-react'
 
-const qualifications = [
+const education = [
   {
-    type: 'education',
     degree: 'B.Tech – Information Technology',
     institution: 'Anjalai Ammal Mahalingam Engineering College, Kovilvenni',
     year: '2022 – 2026',
     score: 'CGPA: 7.85',
   },
   {
-    type: 'education',
     degree: 'HSC (12th)',
     institution: 'Don Bosco Matric Higher Secondary School',
     year: '2020 – 2022',
     score: '73%',
   },
   {
-    type: 'education',
     degree: 'SSLC (10th)',
     institution: 'Don Bosco Matric Higher Secondary School',
     year: '2019 – 2020',
     score: '64.8%',
   },
+]
+
+const certifications = [
   {
-    type: 'certification',
     degree: 'Full Stack Web Development – MERN Stack',
     institution: 'CodeTech Technology Institute, Chennai',
     year: 'Jan 2025 – Present',
     score: 'In Progress',
   },
   {
-    type: 'certification',
     degree: 'Advanced Diploma in Python Programming (ADPP)',
     institution: 'Computer Software College (CSC), Thanjavur',
     year: 'Jun – Oct 2022',
     score: 'Grade A – Excellent',
+  },
+  {
+    degree: 'Cyber Security Workshop',
+    institution: 'Gateway Software Solutions, Coimbatore',
+    year: 'Aug – Sep 2024',
+    score: 'Certified',
+  },
+  {
+    degree: 'Java Full Stack Internship',
+    institution: 'Gradtwin, Chennai',
+    year: 'Jan 2026 – Mar 2026',
+    score: 'Certified',
+  },
+  {
+    degree: 'Java & Application Support Internship',
+    institution: 'Jadayau Software Technology, Thanjavur',
+    year: 'Jun – Jul 2025',
+    score: 'Certified',
   },
 ]
 
@@ -77,11 +93,22 @@ const internships = [
     title: 'Java & Application Support Intern',
     company: 'Jadayau Software Technology',
     location: 'Thanjavur, Tamil Nadu',
-    duration: 'Jun 2025 – Jul 2025',
+    duration: 'Jun – Jul 2025',
     points: [
       'Assisted in application development, testing, and UI-related tasks.',
       'Troubleshot and resolved application issues, improving software workflows.',
       'Supported development of Java-based web systems under senior guidance.',
+    ],
+  },
+  {
+    title: 'Cyber Security Workshop Intern',
+    company: 'Gateway Software Solutions',
+    location: 'Coimbatore, Tamil Nadu',
+    duration: 'Aug – Sep 2024',
+    points: [
+      'Completed hands-on workshop on Cyber Security concepts and practices.',
+      'Trained under Hewlett Packard Enterprise delivery program.',
+      'Gained exposure to secure system design and threat analysis.',
     ],
   },
 ]
@@ -98,27 +125,55 @@ export default function Skills() {
           </h2>
           <p className="text-gray-400">Education & Certifications</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
-          {qualifications.map((q, index) => {
-            const Icon = q.type === 'education' ? GraduationCap : BookOpen
-            return (
+
+        {/* Education */}
+        <div className="mb-10">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="p-2 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg">
+              <GraduationCap size={18} className="text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-100">Education</h3>
+            <div className="flex-1 h-px bg-purple-500/20"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {education.map((q, index) => (
               <div key={index} className="relative bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
-                <div className="flex items-start gap-4">
-                  <div className="p-2 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg shrink-0">
-                    <Icon size={20} className="text-white" />
-                  </div>
-                  <div className="space-y-1">
-                    <h3 className="font-semibold text-gray-100 text-sm leading-snug">{q.degree}</h3>
-                    <p className="text-xs text-gray-400 leading-snug">{q.institution}</p>
-                    <div className="flex flex-wrap gap-2 pt-2">
-                      <span className="text-xs px-2 py-1 rounded-full bg-purple-900/40 border border-purple-500/30 text-purple-300">{q.year}</span>
-                      <span className="text-xs px-2 py-1 rounded-full bg-pink-900/40 border border-pink-500/30 text-pink-300">{q.score}</span>
-                    </div>
+                <div className="space-y-1">
+                  <h3 className="font-semibold text-gray-100 text-sm leading-snug">{q.degree}</h3>
+                  <p className="text-xs text-gray-400 leading-snug">{q.institution}</p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="text-xs px-2 py-1 rounded-full bg-purple-900/40 border border-purple-500/30 text-purple-300">{q.year}</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-pink-900/40 border border-pink-500/30 text-pink-300">{q.score}</span>
                   </div>
                 </div>
               </div>
-            )
-          })}
+            ))}
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="mb-24">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="p-2 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg">
+              <BookOpen size={18} className="text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-100">Certifications</h3>
+            <div className="flex-1 h-px bg-purple-500/20"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certifications.map((q, index) => (
+              <div key={index} className="relative bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300">
+                <div className="space-y-1">
+                  <h3 className="font-semibold text-gray-100 text-sm leading-snug">{q.degree}</h3>
+                  <p className="text-xs text-gray-400 leading-snug">{q.institution}</p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <span className="text-xs px-2 py-1 rounded-full bg-purple-900/40 border border-purple-500/30 text-purple-300">{q.year}</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-pink-900/40 border border-pink-500/30 text-pink-300">{q.score}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* 2. Experience */}
@@ -128,7 +183,7 @@ export default function Skills() {
           </h2>
           <p className="text-gray-400">Internships</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
           {internships.map((intern, index) => (
             <div key={index} className="bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl p-6 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 flex flex-col">
               <div className="flex items-start gap-4">
@@ -183,7 +238,7 @@ export default function Skills() {
           })}
         </div>
 
-        {/* 4. Resume — Option C Centered Minimal */}
+        {/* 4. Resume */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             My <span className="text-gradient">Resume</span>
