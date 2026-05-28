@@ -1,11 +1,11 @@
 import { Award, Briefcase, Users } from 'lucide-react'
-import profileImg from '../../assets/profile-pic.png'
+import profileImg from '../../assets/img-2.jpeg'
 
 export default function About() {
   const stats = [
-    { icon: Briefcase, label: 'Technologies worked with', value: '10+' },
-    { icon: Award, label: 'Projects Completed', value: '3+' },
-    { icon: Users, label: 'Development Experience', value: '+2' },
+    { icon: Briefcase, label: 'Internships Completed', value: '3' },
+    { icon: Award, label: 'Projects Built', value: '3+' },
+    { icon: Users, label: 'Graduating Year', value: '2026' },
   ]
 
   return (
@@ -22,32 +22,28 @@ export default function About() {
           <div className="flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-2xl opacity-75 group-hover:opacity-100 transition-opacity" />
-
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-spin-slow opacity-50" />
-
                 <img
                   src={profileImg}
-                  alt="Profile"
-                  className="relative w-64 h-64 md:w-80 md:h-80 rounded-full  object-cover object-[50%_32%]  border-4 border-purple-500/50"
+                  alt="Infant Richart"
+                  className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover object-[50%_0%] border-4 border-purple-500/50"
                 />
               </div>
             </div>
           </div>
 
-
-
-
           {/* About Content */}
           <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              I’m Infant Richart, a passionate Full-Stack Developer with hands-on experience in building scalable, user-centric web applications using React, TypeScript, Node.js, and modern UI frameworks. I enjoy transforming complex ideas into clean, efficient, and visually engaging digital solutions.
+            <p className="text-gray-300 leading-relaxed text-justify">
+              I'm Infant Richart, an entry-level Full Stack Developer skilled in Java and MERN Stack development. I build secure, scalable web applications using React.js, Node.js, Express.js, and MongoDB, with a strong foundation in MVC architecture and role-based access control.
             </p>
-            <p className="text-gray-300 leading-relaxed">
-              With a strong foundation in MERN stack development, databases like PostgreSQL and MongoDB, and growing expertise in cloud technologies (AWS, Docker), I focus on writing maintainable code and delivering real-world impact. My interests also extend into AI, Machine Learning, and Cyber Security, where I actively explore secure and intelligent system design.
+            <p className="text-gray-300 leading-relaxed text-justify">
+              I've completed internships at Gradtwin (Java Full Stack) and Jadayau Software Technology, gaining real-world experience in end-to-end application development, debugging, and software workflows.
+              I've completed my B.Tech in Information Technology at Anjalai Ammal Mahalingam Engineering College with a CGPA of 7.85, and completed intensive MERN Stack training at CodeTech Technology Institute, Chennai.
             </p>
-            <p className="text-gray-300 leading-relaxed">
-              I’m a continuous learner who thrives on problem-solving, collaboration, and building technology that makes a difference.
+            <p className="text-gray-300 leading-relaxed text-justify">
+              I'm a continuous learner who enjoys solving real-world problems through clean, maintainable code. My interests also extend into AI, Machine Learning, and Cyber Security.
             </p>
 
             {/* Stats */}
@@ -69,6 +65,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   )
 }
