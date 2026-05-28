@@ -94,7 +94,7 @@ export default function Contact() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Thank you for taking the time to fill up the message,{' '}
               <span className="text-white font-semibold">{senderName}</span>!<br />
-              Your message means a lot to me. I'll respond as soon as possible.
+              Your message means a lot to me, and I will reply to you soon.
             </p>
 
             {/* Button */}
