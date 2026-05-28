@@ -56,7 +56,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative py-24 bg-black">
+    <section id="contact" className="relative pt-24 pb-10 md:py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
