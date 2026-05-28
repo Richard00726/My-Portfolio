@@ -79,3 +79,24 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #9333ea, #db2777);
 }
+
+@keyframes modal-pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes check-draw {
+  0% { stroke-dashoffset: 60; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-modal {
+  animation: modal-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.animate-check {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: check-draw 0.5s ease-out 0.3s forwards;
+}
