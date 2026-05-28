@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
           </div>
  
-          <div className="flex flex-col">
+          <div className="hidden md:flex md:flex-col">
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="grid grid-cols-2 gap-x-6 gap-y-2">
               {quickLinks.map((link) => (
