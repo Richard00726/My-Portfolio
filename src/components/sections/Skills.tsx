@@ -5,7 +5,7 @@ const education = [
     degree: 'B.Tech – Information Technology',
     institution: 'Anjalai Ammal Mahalingam Engineering College, Kovilvenni',
     year: '2022 – 2026',
-    score: 'CGPA: 7.89',
+    score: 'CGPA: 7.80',
   },
   {
     degree: 'HSC (12th)',
